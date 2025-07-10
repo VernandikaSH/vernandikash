@@ -94,13 +94,9 @@ const Footer = () => {
               </Link>
             </div>
             <p className="font-medium text-xs text-slate-500 text-center">
-              Dibuat oleh{' '}
-              <Link href="https://instagram.com" target="_blank" className="font-bold text-primary ">
+              © 2025 {' '}
+              <Link href="https://www.linkedin.com/in/vernandikastanleyhansen/" target="_blank" className="font-bold text-primary ">
                 Vernandika Stanley Hansen
-              </Link>
-              , menggunakan{' '}
-              <Link href="https://tailwindcss.com" target="_blank" className="font-bold text-sky-500">
-                Tailwind CSS
               </Link>
             </p>
           </div>
