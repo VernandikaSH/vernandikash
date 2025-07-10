@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --navbar-bg-light: rgba(255, 255, 255, 0.7);
+  --navbar-bg-dark: rgba(15, 23, 42, 0.5); 
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@theme {
+  --color-primary: #ff5b22;
+  --color-dark: #0f172a;
+  --color-secondary: #64748b;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.navbar-fixed {
+  @apply fixed z-[999] backdrop-blur-sm; /* Remove direct background and opacity here */
+  background: var(--navbar-bg-light); /* Use CSS variable for background */
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.dark .navbar-fixed {
+  background: var(--navbar-bg-dark); /* Apply dark mode background */
+}
+
+@layer components {
+  .hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-dark dark:bg-white;
+  }
+
+  .hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+  }
+
+  .hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+  }
+
+  .hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+  }
+
+  #dark-toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-3;
+  }
+}
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-from-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-from-right {
+  animation: slide-in-from-right 0.5s ease-in-out forwards;
+}
+
+.animate-slide-in-from-left {
+  animation: slide-in-from-left 0.5s ease-in-out forwards;
+}
+
