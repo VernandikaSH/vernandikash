@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-wrap">
           <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
             <h2 className="font-bold text-4xl text-white mb-5">VSH</h2>
-            <h3 className="font-bold text-2xl mb-2">Hubungi Kami</h3>
+            <h3 className="font-bold text-2xl mb-2">Contact Me</h3>
             <p>vernandika1204@gmail.com</p>
             <p>Universitas Padjadjaran</p>
             <p>Sumedang</p>
