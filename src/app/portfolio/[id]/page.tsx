@@ -59,7 +59,7 @@ const projects = [
         ],
         tools: [
             { name: 'Python', iconSrc: '/tools/Python.png' },
-            { name: 'TensorFlow', iconSrc: '/tools/tensorflow.png' },
+            { name: 'TensorFlow', iconSrc: '/tools/tensorFlow.png' },
             { name: 'Scikit-learn', iconSrc: '/tools/scikit-learn.png' },
             { name: 'Kaggle', iconSrc: '/tools/Kaggle.png' },
             { name: 'Jupyter Notebook', iconSrc: '/tools/Jupyter.png' },
