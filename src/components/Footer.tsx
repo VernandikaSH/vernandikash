@@ -35,7 +35,7 @@ const Footer = () => {
             </ul>
           </div> */}
           <div className="w-full px-4 mb-12 md:w-1/3">
-            <h3 className="font-semibold text-xl text-white mb-5">Tautan</h3>
+            <h3 className="font-semibold text-xl text-white mb-5">Link</h3>
             <ul className="text-slate-300">
               <li>
                 <Link href="#home" className="inline-block text-base hover:text-primary mb-3">

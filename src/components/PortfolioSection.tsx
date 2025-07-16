@@ -27,7 +27,7 @@ const PortfolioSection = () => {
       tools: [
         { name: 'React', iconSrc: '/tools/React.png' },
         { name: 'TypeScript', iconSrc: '/tools/TypeScript.png' },
-        { name: 'NextJS', iconSrc: '/tools/NextJS.png' },
+        { name: 'NextJS', iconSrc: '/tools/Nextjs.png' },
         { name: 'Figma', iconSrc: '/tools/Figma.png' },
         { name: 'Tailwind', iconSrc: '/tools/TailwindCSS.png' },
       ],
