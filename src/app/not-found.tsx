@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import Header from '@/components/Header';
+import Loading from '@/components/Loading';
 
 export default function NotFound() {
   return (
     <section className="pt-36 pb-16 bg-slate-100 dark:bg-slate-800 min-h-screen">
+      <Loading />
       <Header />
       <div className="container mx-auto p-4 text-center">
         <div className="max-w-md mx-auto bg-white dark:bg-slate-900 rounded-lg shadow-lg p-8">

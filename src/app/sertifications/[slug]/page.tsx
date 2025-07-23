@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { posts as allCertifications, Certification } from '@/components/SertifSection';
 import Header from '@/components/Header';
+import Loading from '@/components/Loading';
 
 interface SertificationDetailPageProps {
   params: Promise<{
@@ -35,6 +36,7 @@ export default async function SertificationDetailPage({ params }: SertificationD
 
   return (
     <section className="pt-36 pb-16 bg-slate-100 dark:bg-slate-800 min-h-screen">
+      <Loading />
       <Header />
       <div className="container mx-auto p-4 md:p-8 pt-24">
         <div className="bg-white dark:bg-slate-900 rounded-lg shadow-lg overflow-hidden md:flex flex-col md:flex-row">

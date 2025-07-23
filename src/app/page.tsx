@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 // src/app/page.tsx
 import Header from '@/components/Header';
 import HeroSection from '@/components/HeroSection';
@@ -14,7 +13,7 @@ import Loading from '@/components/Loading';
 export default function Home() {
   return (
     <>
-      {/* <Loading /> */}
+      <Loading />
       <Header />
       <HeroSection />
       <AboutSection />
