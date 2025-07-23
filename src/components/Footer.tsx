@@ -57,11 +57,11 @@ const Footer = () => {
                   Skills
                 </Link>
               </li>
-              {/* <li>
-                <Link href="#blog" className="inline-block text-base hover:text-primary mb-3">
-                  Blog
+              <li>
+                <Link href="#sertificate" className="inline-block text-base hover:text-primary mb-3">
+                  Sertificate
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <Link href="#contact" className="inline-block text-base hover:text-primary mb-3">
                   Contacts

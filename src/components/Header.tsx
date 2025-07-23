@@ -113,11 +113,11 @@ const Header = () => {
                     Skills
                   </Link>
                 </li>
-                {/* <li className="group">
+                <li className="group">
                   <Link href="/#sertificate" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white transition-colors duration-300" onClick={() => setIsHamburgerActive(false)}>
                     Sertificate
                   </Link>
-                </li> */}
+                </li>
                 <li className="group">
                   <Link href="/#contact" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white transition-colors duration-300" onClick={() => setIsHamburgerActive(false)}>
                     Contacts

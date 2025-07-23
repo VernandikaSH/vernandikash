@@ -1,65 +1,85 @@
-// src/components/BlogSection.tsx
-import Image from 'next/image';
-import Link from 'next/link';
+// src/components/SertifSection.tsx
+import SertifCarousel from './SertifCarousel';
 
-const BlogSection = () => {
-  const posts = [
-    {
-      id: 1,
-      imageSrc: '/gambar.jpg',
-      title: 'Blog 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, praesentium!',
-    },
-    {
-      id: 2,
-      imageSrc: '/gambar.jpg',
-      title: 'Blog 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum facilis doloremque unde eius perspiciatis!',
-    },
-    {
-      id: 3,
-      imageSrc: '/gambar.jpg',
-      title: 'Blog 3 : Lorem ipsum dolor sit amet consectetur.',
-      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, beatae. Ab harum quasi incidunt enim a laboriosam consequatur officiis tenetur.',
-    },
-  ];
+// Define the Certification interface here since your data is local to this file
+export interface Certification {
+  id: number;
+  slug: string; // Add slug for dynamic routing
+  imageSrc: string;
+  title: string;
+  issuedIn: string; // Add issuedIn field
+  description: string; // This will be the full description for the detail page
+}
 
+// Export the posts array here
+export const posts: Certification[] = [ // <--- Add 'export' here
+  {
+    id: 1,
+    slug: 'linkedin-learning-level-up-javascript',
+    imageSrc: '/sertif/linkedin-learning-level-up-javascript.png',
+    title: 'Level Up: JavaScript (LinkedIn Learning)',
+    issuedIn: 'July 2025',
+    description: 'This certification delves into advanced JavaScript concepts, building upon foundational knowledge. It covers topics like asynchronous programming (Promises, async/await), modern ES6+ features, functional programming paradigms, and best practices for writing clean, efficient, and maintainable JavaScript code. Ideal for developers looking to deepen their understanding and build more complex applications.',
+  },
+  {
+    id: 2,
+    slug: 'linkedin-learning-react-full-stack',
+    imageSrc: '/sertif/linkedin-learning-react-creating-and-hosting-a-full-stack-site.png',
+    title: 'React: Creating and Hosting a Full-Stack Site (LinkedIn Learning)',
+    issuedIn: 'July 2025',
+    description: 'This course focuses on building complete full-stack applications using React for the frontend and integrating it with backend services. It covers topics from API integration, state management, authentication, to deployment strategies. Learn how to connect your React app to a database, handle server-side logic, and host your application for public access.',
+  },
+  {
+    id: 3,
+    slug: 'linkedin-learning-react-essential-training',
+    imageSrc: '/sertif/linkedin-learning-react-essential-training.png',
+    title: 'React Essential Training (LinkedIn Learning)',
+    issuedIn: 'July 2025',
+    description: 'An introductory course to React, covering the core concepts necessary to build modern single-page applications. This training includes understanding components, props, state, hooks (useState, useEffect), handling events, and basic routing. It provides a solid foundation for anyone starting their journey with the React library.',
+  },
+  {
+    id: 4,
+    slug: 'ccna-itn',
+    imageSrc: '/sertif/ccna-itn.png',
+    title: 'CCNA: Introduction to Networks (ITN)',
+    issuedIn: 'May 2025',
+    description: 'This is the first course in the CCNA curriculum, introducing the architecture, structure, functions, components, and models of the Internet and computer networks. It covers the principles of IP addressing and the basics of Ethernet concepts, media, and operations to provide a foundation for developing skills in network design and support.',
+  },
+  {
+    id: 5,
+    slug: 'ccna-srwe',
+    imageSrc: '/sertif/ccna-srwe.png',
+    title: 'CCNA: Switching, Routing, and Wireless Essentials (SRWE)',
+    issuedIn: 'June 2025',
+    description: 'The second course in the CCNA curriculum, focusing on switching technologies and router operations that support small to medium business networks and ISPs. It covers VLANs, inter-VLAN routing, STP, EtherChannel, and wireless LAN concepts, along with basic routing configurations for IPv4 and IPv6.',
+  },
+  {
+    id: 6,
+    slug: 'ccna-ensa',
+    imageSrc: '/sertif/ccna-ensa.png',
+    title: 'CCNA: Enterprise Networking, Security, and Automation (ENSA)',
+    issuedIn: 'June 2025',
+    description: 'The third and final course in the CCNA curriculum, delving into advanced routing concepts, enterprise network security, WAN technologies, and network automation. Topics include OSPF, EIGRP, VPNs, ACLs, NAT, QoS, cloud and virtualization concepts, and an introduction to network programmability with Python.',
+  },
+];
+
+const SertifSection = () => {
   return (
     <section id="sertificate" className="pt-36 pb-32 bg-slate-100 dark:bg-dark">
       <div className="container">
         <div className="w-full px-4">
           <div className="max-w-xl mx-auto text-center mb-16">
             <h4 className="font-semibold text-lg text-primary">Sertificate</h4>
-            <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Tulisan Terkini</h2>
-            <p className="font-medium text-secondary text-md md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis minus exercitationem ipsam molestiae.
+            <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Latest Certifications</h2>
+            <p className="font-medium text-base text-secondary md:text-lg">
+              Explore my latest certifications and achievements in various fields of technology.
             </p>
           </div>
-
-          <div className="flex flex-wrap">
-            {posts.map((post) => (
-              <div key={post.id} className="w-full px-4 lg:w-1/2 xl:w-1/3">
-                <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-700">
-                  <Image src={post.imageSrc} alt={post.title} width={600} height={400} />
-                  <div className="py-8 px-6">
-                    <h3>
-                      <Link href="#" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">
-                        {post.title}
-                      </Link>
-                    </h3>
-                    <p className="font-medium text-base text-secondary mb-6">{post.description}</p>
-                    <Link href="#" className="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">
-                      Baca Selengkapnya
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <SertifCarousel posts={posts} />
         </div>
       </div>
     </section>
   );
 };
 
-export default BlogSection;
+export default SertifSection;
