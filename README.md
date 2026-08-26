@@ -50,12 +50,12 @@ I build things end-to-end — from web apps to local AI tools — and learn by s
 <tr>
 <td width="50%" valign="top">
 
-### ☕ Cafe Ordering App
+### ☕ Cafe Noir
 Cafe ordering web app with full admin panel — monochrome black-and-gold design.
 
 `Next.js 14` `Supabase` `Midtrans` `Vercel`
 
-[View Repo →](https://github.com/vernandikash/cafe-ordering-app)
+[View Repo →](https://github.com/vernandikash/cafenoir)
 
 </td>
 <td width="50%" valign="top">
@@ -72,12 +72,12 @@ Personal finance web app to track spending and visualize it with interactive cha
 <tr>
 <td width="50%" valign="top">
 
-### 🀄 Mandarin SRS App
+### 🀄 Mandarin App
 Custom Mandarin learning app with a hand-built SM-2 spaced repetition engine and stroke-order writing practice.
 
 `Next.js 14` `Supabase` `Hanzi Writer` `Web Speech API`
 
-[View Repo →](https://github.com/vernandikash/mandarin-srs-app)
+[View Repo →](https://github.com/vernandikash/mandarin-app)
 
 </td>
 <td width="50%" valign="top">
@@ -87,7 +87,7 @@ Cross-platform desktop notes app with PIN lock, dark mode, and a contribution-st
 
 `Tauri v2` `React` `TypeScript` `SQLite`
 
-[View Repo →](https://github.com/vernandikash/notes-app)
+[View Repo →](https://github.com/vernandikash/catatan-ku)
 
 </td>
 </tr>
@@ -124,16 +124,7 @@ Fully offline desktop app that transcribes and translates video audio in real ti
 [View Repo →](https://github.com/vernandikash/video-translator)
 
 </td>
-<td width="50%" valign="top">
 
-### 📹 CCTV + AI
-Repurposed an old Android phone into a smart CCTV camera with person, activity, and posture detection.
-
-`Python` `YOLOv8` `MediaPipe` `OpenCV`
-
-[View Repo →](https://github.com/vernandikash/cctv-project)
-
-</td>
 </tr>
 </table>
 
