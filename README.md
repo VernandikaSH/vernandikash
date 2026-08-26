@@ -143,8 +143,8 @@ Repurposed an old Android phone into a smart CCTV camera with person, activity, 
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=vernandikash&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vernandikash&layout=compact&theme=tokyonight&hide_border=true" />
+<img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=vernandikash&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=vernandikash&layout=compact&theme=tokyonight&hide_border=true" />
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=vernandikash&theme=tokyonight&hide_border=true" />
 
