@@ -12,7 +12,7 @@ const Footer = () => {
             <h3 className="font-bold text-2xl mb-2">Contact Me</h3>
             <p>vernandika1204@gmail.com</p>
             <p>Universitas Padjadjaran</p>
-            <p>Sumedang</p>
+            <p>Tangerang</p>
           </div>
           {/* <div className="w-full px-4 mb-12 md:w-1/3">
             <h3 className="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
@@ -94,7 +94,7 @@ const Footer = () => {
               </Link>
             </div>
             <p className="font-medium text-xs text-slate-500 text-center">
-              © 2025 {' '}
+              © 2026 {' '}
               <Link href="https://www.linkedin.com/in/vernandikastanleyhansen/" target="_blank" className="font-bold text-primary ">
                 Vernandika Stanley Hansen
               </Link>

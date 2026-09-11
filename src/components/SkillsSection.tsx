@@ -11,6 +11,8 @@ const SkillsSection = () => {
     { name: 'Tailwind', src: '/tools/TailwindCSS.png', href: '#' },
     { name: 'React', src: '/tools/React.png', href: '#' },
     { name: 'NextJS', src: '/tools/Nextjs.png', href: '#' },
+    { name: 'Vercel', src: '/tools/Vercel.png', href: '#' },
+    { name: 'Supabase', src: '/tools/Supabase.png', href: '#' },
   ];
 
   return (

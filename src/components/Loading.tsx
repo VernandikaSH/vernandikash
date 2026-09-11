@@ -5,75 +5,61 @@ import { useEffect, useState } from 'react';
 
 export default function Loading() {
   const [progress, setProgress] = useState(0);
+  const [isExiting, setIsExiting] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
-    const totalDuration = 3000; // 3 seconds total
-    const steps = 100; // Number of progress updates
-    const intervalTime = totalDuration / steps; // Calculate interval
+    // Lock scrolling while the splash is up, so the header's scroll-triggered
+    // "fixed" style and BackToTop's visibility can't flip on underneath it.
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const totalDuration = 2600; // ~2.6 seconds total
+    const steps = 100;
+    const intervalTime = totalDuration / steps;
 
     const interval = setInterval(() => {
-      setProgress(prev => {
+      setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
-          setIsLoading(false);
+          setIsExiting(true);
+          document.body.style.overflow = previousOverflow;
+          setTimeout(() => setIsLoading(false), 500);
           return 100;
         }
-        return prev + (100 / steps); // Equal increments
+        return prev + 100 / steps;
       });
     }, intervalTime);
 
-    return () => clearInterval(interval);
+    return () => {
+      clearInterval(interval);
+      document.body.style.overflow = previousOverflow;
+    };
   }, []);
-
-  // Get message based on progress percentage
-  const getProgressMessage = () => {
-    if (progress < 25) return 'Starting up...';
-    if (progress < 50) return 'Loading components...';
-    if (progress < 75) return 'Almost There...';
-    if (progress < 95) return 'Finalizing...';
-    return 'Ready to go!';
-  };
 
   if (!isLoading) return null;
 
   return (
     <div
-      className="fixed inset-0 flex flex-col items-center justify-center bg-secondary z-50 backdrop-blur-sm"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className={`fixed inset-0 z-[10000] flex flex-col items-center justify-center gap-6 bg-dark transition-opacity duration-500 ${
+        isExiting ? 'opacity-0 pointer-events-none' : 'opacity-100'
+      }`}
     >
-      {/* Spinner with progress indicator */}
-      <div className="relative">
-        <div
-          className={`animate-spin rounded-full h-24 w-24 border-t-4 border-b-4 border-primary transition-all duration-300 ${isHovered ? 'scale-110' : ''}`}
-          style={{
-            borderTopColor: isHovered ? '#ff5b22' : '#fa6937',
-            borderBottomColor: isHovered ? '#ff5b22' : '#fa6937',
-          }}
-        />
-
-        {/* Progress percentage with 2 decimal places */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-gray-200 font-bold text-lg">
-            {progress.toFixed(2)}%
-          </span>
-        </div>
+      <div className="relative flex h-40 w-40 items-center justify-center">
+        <div className="blob-morph absolute inset-0 bg-primary" />
+        <span className="relative z-10 text-2xl font-bold tracking-wide text-white">VSH</span>
       </div>
 
-      {/* Progress bar */}
-      <div className="w-64 bg-gray-200 rounded-full h-2.5 mt-8">
+      <div className="h-1 w-48 overflow-hidden rounded-full bg-white/10">
         <div
-          className="bg-primary h-2.5 rounded-full transition-all duration-300 ease-out"
+          className="h-full rounded-full bg-primary transition-all duration-150 ease-out"
           style={{ width: `${progress}%` }}
         />
       </div>
 
-      {/* Interactive message that changes based on progress */}
-      <p className="mt-4 text-gray-200 text-sm transition-opacity duration-300">
-        {getProgressMessage()}
+      <p className="text-sm font-medium tracking-widest text-white/50 uppercase">
+        Loading {Math.min(Math.round(progress), 100)}%
       </p>
     </div>
   );
-} 
+}

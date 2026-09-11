@@ -14,7 +14,7 @@ const AboutSection = () => {
               Let&apos;s get to know me 👋
             </h2>
             <p className="font-medium text-base text-secondary max-w-xl lg:text-lg">
-              Computer Science undergraduate at Universitas Padjadjaran with a strong interest in web frontend development. Passionate about learning new technologies, with growing experience in machine learning and computer networking. Adaptable, quick to learn, and eager to contribute to impactful tech solutions.
+              Computer Science fresh graduate at Universitas Padjadjaran with a strong interest in web frontend development. Passionate about learning new technologies, with growing experience in machine learning and computer networking. Adaptable, quick to learn, and eager to contribute to impactful tech solutions.
             </p>
           </div>
           <div className="w-full px-4 lg:w-1/2">

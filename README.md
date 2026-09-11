@@ -1,8 +1,8 @@
 <div align="center">
 
-# Hi, I'm Dika 👋
+# Hi, I'm Vernan 👋
 
-**Computer Science Student @ Universitas Padjadjaran** · Fullstack & AI Enthusiast
+**Computer Science Fresh Graduate @ Universitas Padjadjaran** · Web & AI Enthusiast
 
 I build things end-to-end — from web apps to local AI tools — and learn by shipping real projects.
 
@@ -16,15 +16,15 @@ I build things end-to-end — from web apps to local AI tools — and learn by s
 
 <div align="center">
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
-![Tauri](https://img.shields.io/badge/Tauri-24C8DB?style=for-the-badge&logo=tauri&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
 </div>
 
@@ -50,42 +50,64 @@ I build things end-to-end — from web apps to local AI tools — and learn by s
 <tr>
 <td width="50%" valign="top">
 
-### ☕ Cafe Noir
-Cafe ordering web app with full admin panel — monochrome black-and-gold design.
+### 🎒 EduSiap
+Video-based learning platform for preschool children, with quizzes and digital storybooks.
 
-`Next.js 14` `Supabase` `Midtrans` `Vercel`
+`React` `TypeScript` `Next.js` `Figma` `Tailwind`
 
-[View Repo →](https://github.com/vernandikash/cafenoir)
+[View Repo →](https://github.com/muhammad22015/EduSiap-8)
 
 </td>
 <td width="50%" valign="top">
 
-### 💰 Duitku
-Personal finance web app to track spending and visualize it with interactive charts.
+### 🥥 Codet
+ML-based mobile app that classifies coconut tree diseases from leaf images.
 
-`Next.js` `Supabase` `Recharts` `Vercel`
+`Python` `TensorFlow` `Scikit-learn` `Kaggle` `Jupyter Notebook`
 
-[View Repo →](https://github.com/vernandikash/duitku)
+[View Repo →](https://github.com/rumirifai/Codet.id)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🀄 Mandarin App
-Custom Mandarin learning app with a hand-built SM-2 spaced repetition engine and stroke-order writing practice.
+### 🦺 SafeMove
+AR-powered educational game that teaches traffic safety to children and teens.
 
-`Next.js 14` `Supabase` `Hanzi Writer` `Web Speech API`
+`Unity` `Blender` `C#`
 
-[View Repo →](https://github.com/vernandikash/mandarin-app)
+[View Repo →](https://github.com/vernandikash/safemove)
 
 </td>
 <td width="50%" valign="top">
 
-### 📝 Notes App
-Cross-platform desktop notes app with PIN lock, dark mode, and a contribution-style activity heatmap.
+### 🚗 Gogo Rentals
+Vehicle rental website with categorized search, secure booking, and GPS tracking.
 
-`Tauri v2` `React` `TypeScript` `SQLite`
+`HTML` `CSS` `JavaScript` `PHP` `CodeIgniter` `Figma`
+
+[View Repo →](https://github.com/JasonMs17/gogo-rentals)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 💰 Duitku
+Personal finance web app to track income and expenses with a visual dashboard and trend graphs.
+
+`Next.js` `Tailwind` `Supabase` `Vercel`
+
+[View Repo →](https://github.com/vernandikash/duitku)
+
+</td>
+<td width="50%" valign="top">
+
+### 📝 Catatan Ku
+Offline desktop notes app with PIN lock, dark mode, and a contribution-style writing heatmap.
+
+`Tauri` `React` `TypeScript` `SQLite`
 
 [View Repo →](https://github.com/vernandikash/catatan-ku)
 
@@ -95,36 +117,45 @@ Cross-platform desktop notes app with PIN lock, dark mode, and a contribution-st
 <td width="50%" valign="top">
 
 ### 📄 PDF Studio
-Local multipage PDF toolkit — merge, convert, and edit PDFs with a clean Streamlit UI.
+Local-first PDF toolkit — merge, split, edit, and convert PDFs through a clean Streamlit UI.
 
-`Python` `Streamlit` `PyMuPDF` `LibreOffice`
+`Python` `Streamlit`
 
 [View Repo →](https://github.com/vernandikash/pdf-studio)
 
 </td>
 <td width="50%" valign="top">
 
-### 🧾 Telegram Nota Bot
-Telegram bot that reads receipt photos with Gemini Vision and logs the data automatically.
+### 🔐 Password Generator
+Offline password generator and vault manager, encrypted locally with AES-GCM.
 
-`Node.js` `Gemini Vision` `Supabase` `Google Sheets`
+`Python`
 
-[View Repo →](https://github.com/vernandikash/telegram-nota-bot)
+[View Repo →](https://github.com/vernandikash/password-generator)
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 🎬 Video Translator
-Fully offline desktop app that transcribes and translates video audio in real time — no cloud, no API keys.
+### 🎲 Gameboard
+Collection of classic board and puzzle games, all playable in the browser.
 
-`Tauri v2` `Rust` `Python` `faster-whisper` `NLLB-200`
+`Next.js` `React` `TypeScript` `Tailwind`
 
-[View Repo →](https://github.com/vernandikash/video-translator)
+[View Repo →](https://github.com/vernandikash/gameboard)
 
 </td>
+<td width="50%" valign="top">
 
+### 🎯 Softskill Challenge
+Gamified personal-growth app with roulette-assigned daily, weekly, and monthly tasks.
+
+`Next.js` `Supabase` `Tailwind`
+
+[View Repo →](https://github.com/vernandikash/softskill-challange)
+
+</td>
 </tr>
 </table>
 

@@ -15,11 +15,11 @@ const HeroSection = () => {
               </span>
             </h1>
             <h2 className="font-medium text-secondary text-lg mb-6 lg:text-2xl">
-              Undergraduate Informatics Engineering Student in{' '}
+              Fresh Graduate Informatics Engineering Student in{' '}
               <span className="text-dark dark:text-white">Padjadjaran University</span>
             </h2>
             <p className="font-medium text-secondary mb-10 leading-relaxed">
-              Frontend Web Enthusiast
+              Frontend & AI Enthusiast
             </p>
             <a
               href="#contact"
@@ -31,7 +31,7 @@ const HeroSection = () => {
           <div className="w-full self-end px-4 lg:w-1/2">
             <div className="relative mt-10 lg:mt-0 lg:right-0">
               <Image
-                src="/img/pp.png" 
+                src="/img/pp2.png" 
                 alt="Vernandika Stanley"
                 className="max-w-full mx-auto relative z-10"
                 width={400} 
