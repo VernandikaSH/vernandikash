@@ -87,6 +87,49 @@ body {
   animation: slide-in-from-left 0.5s ease-in-out forwards;
 }
 
+@keyframes skeleton-shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton {
+  @apply relative overflow-hidden bg-slate-200;
+}
+
+.dark .skeleton {
+  @apply bg-white/10;
+}
+
+.skeleton::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: skeleton-shimmer 1.2s infinite;
+}
+
+.dark .skeleton::after {
+  background-image: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton::after {
+    animation: none;
+  }
+}
+
 @keyframes blob-morph {
   0%,
   100% {

@@ -2,6 +2,7 @@
 'use client'; // This directive makes it a Client Component
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 const Header = () => {
@@ -72,8 +73,23 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between relative">
           <div className="px-4">
-            <Link href="/#home" className="font-bold text-lg text-primary block py-6">
-              VernandikaSH
+            <Link href="/#home" className="block py-6">
+              <Image
+                src="/logo-header-light.png"
+                alt="Vernandika Stanley Hansen"
+                width={537}
+                height={163}
+                priority
+                className="block h-9 w-auto dark:hidden"
+              />
+              <Image
+                src="/logo-header-dark.png"
+                alt="Vernandika Stanley Hansen"
+                width={536}
+                height={162}
+                priority
+                className="hidden h-9 w-auto dark:block"
+              />
             </Link>
           </div>
           <div className="flex items-center px-4">

@@ -1,4 +1,5 @@
 // src/components/Footer.tsx
+import Image from 'next/image';
 import Link from 'next/link';
 import { InstagramIcon, XIcon, LinkedInIcon, GithubIcon, EmailIcon } from '@/components/SocialIcons'; // Re-use SocialIcons
 
@@ -8,7 +9,13 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-wrap">
           <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
-            <h2 className="font-bold text-4xl text-white mb-5">VSH</h2>
+            <Image
+              src="/logo-footer.png"
+              alt="Vernandika Stanley Hansen"
+              width={2080}
+              height={1024}
+              className="w-48 h-auto mb-6"
+            />
             <h3 className="font-bold text-2xl mb-2">Contact Me</h3>
             <p>vernandika1204@gmail.com</p>
             <p>Universitas Padjadjaran</p>
